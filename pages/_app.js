@@ -1,7 +1,10 @@
 import '../styles/globals.css'
+import I18n from "../lib/i18n";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
+      <Component {...pageProps} />
+    </I18n>
+  );
 }
-
-export default MyApp

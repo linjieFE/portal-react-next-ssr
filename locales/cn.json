@@ -1,0 +1,11 @@
+
+{
+    "intro": {
+      "welcome": "欢迎, {{username}}!",
+      "text": "希望你找到这个应用",
+      "description": "此示例演示如何更改SSG和SSR优化页的语言。"
+    },
+    "dashboard": {
+      "description": "此示例演示如何仅在客户端更改语言。对仪表板有用，因为它们不需要搜索引擎优化。"
+    }
+  }
