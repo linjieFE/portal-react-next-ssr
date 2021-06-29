@@ -1,0 +1,39 @@
+.swiperOut{
+  width: 100%;
+  height: 10vw;
+  position: relative;
+  border-radius: .03rem;
+  overflow: hidden;
+  margin-bottom: .35rem;
+  .dotContainer{ // 轮播点
+    padding: .05rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: +1;
+    .cusDot{
+      width: .2rem;
+      height: .2rem;
+      border: .02rem solid #fff;
+      border-radius: 50%;
+      margin: 0 .05rem;
+      background: #fff;
+      cursor: pointer;
+      &.curDot{
+        background: rgba(24,144,255,.2);
+      }
+    }
+  }
+  .swiperItem{
+    height: 10vw;
+    color: #fff;
+    line-height: 10vw;
+    text-align: center;
+    overflow: hidden;
+    img{
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+}

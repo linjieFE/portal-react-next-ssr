@@ -1,0 +1,132 @@
+.swiperOut{
+  width: 100%;
+  position: relative;
+  height: calc(55vh);
+  .swiperItem{
+    height: calc(55vh);
+    color: #fff;
+    line-height: calc(55vh);
+    text-align: center;
+    background: #364d79;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  &:hover{
+    .controlContainer{
+      .controlBar{
+        .controlArrow{
+          left: 0;
+          &.controlArrowRight{
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .controlContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: +1;
+    .controlBar{
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: .1rem .4rem;
+      margin-bottom: 17vh;
+      .controlArrow{
+        width: .8rem;
+        height: .8rem;
+        background: rgba(255,255,255,.6);
+        border-radius: 50%;
+        position: relative;
+        left: -2.4rem;
+        transition: left .3s linear;
+        cursor: pointer;
+        &.controlArrowRight{
+          left: 2.4rem
+        }
+        .controlIcon{
+          font-size: .4rem;
+          color: #fff;
+          &.transIcon{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    
+    .dotContainer{ // 轮播点
+      padding: .05rem 0;
+      .cusDot{
+        width: .2rem;
+        height: .2rem;
+        border: .02rem solid #fff;
+        border-radius: 50%;
+        margin: 0 .05rem;
+        background: #fff;
+        cursor: pointer;
+        &.curDot{
+          background: #c33946;
+        }
+      }
+    }
+  }
+}
+.centerOut{
+  width: 100%;
+  background-color: #fff;
+  // background-image: url('../public/images/idx-contBg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  .contentContainer{
+    width: 66%;
+    margin: 0 auto;
+    padding: .4rem 0 .4rem 0;
+    .leftSide{
+      margin-right: 4%;
+      width: 67%;
+      .detailContainer{
+        width: 100%;
+        img{
+          max-width: 100%;
+        }
+      }
+      .newsTitle{
+        margin: .3rem 0 .4rem 0;
+      }
+      .eitherLink{
+        margin: .35rem 0;
+        border-top: 1px solid #bfbfbf;
+        padding: .35rem 0;
+        .linkItem{
+          &:hover{
+            p{
+              color: #BF2B4E;
+            }
+          }
+          + .linkItem{
+            margin-top: .15rem;
+          }
+        }
+      }
+    }
+    .rightSide{
+      width: 29%;
+      .titBar{
+        margin-bottom: .3rem;
+      }
+      .newsItem{
+        margin: .1rem 0;
+        cursor: pointer;
+        &:hover{
+          color: #BF2B4E;
+        }
+      }
+    }
+  }
+}

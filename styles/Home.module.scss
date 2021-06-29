@@ -1,0 +1,151 @@
+@import './common.module.scss';
+.swiperOut{
+  width: 100%;
+  position: relative;
+  height: calc(100vh - .91rem);
+  min-height: 6rem;
+  .swiperItem{
+    height: calc(100vh - .91rem);
+    color: #fff;
+    line-height: calc(100vh - .91rem);
+    text-align: center;
+    background: #364d79;
+    width: 100vw;
+    overflow: hidden;
+    min-height: 6rem;
+    img{
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+  &:hover{
+    .controlContainer{
+      .controlBar{
+        .controlArrow{
+          left: 0;
+          &.controlArrowRight{
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .controlContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: +1;
+    .controlBar{
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: .1rem .4rem;
+      .controlArrow{
+        width: .8rem;
+        height: .8rem;
+        background: rgba(255,255,255,.6);
+        border-radius: 50%;
+        position: relative;
+        left: -2.4rem;
+        transition: left .3s linear;
+        cursor: pointer;
+        &.controlArrowRight{
+          left: 2.4rem
+        }
+        .controlIcon{
+          font-size: .4rem;
+          color: #fff;
+          &.transIcon{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    
+    .dotContainer{ // 轮播点
+      padding: .05rem 0;
+      .cusDot{
+        width: .2rem;
+        height: .2rem;
+        border: .02rem solid #fff;
+        border-radius: 50%;
+        margin: 0 .05rem;
+        background: #fff;
+        cursor: pointer;
+        &.curDot{
+          background: rgba(24,144,255,.2);
+        }
+      }
+    }
+  }
+}
+
+
+.linkArea{
+  background: #fff;
+  width: 100%;
+  .contArea{
+    width: 66%;
+    margin: 0 auto;
+    padding: .3rem 0;
+    box-sizing: border-box;
+    // 菜单
+    .menuList{
+      padding: .2rem 8%;
+      .menuCol{
+        .title{
+          font-size: .2rem;
+          font-weight: bold;
+          color: #000;
+          margin-bottom: .4rem;
+        }
+        .menuItem{
+          font-size: .14rem;
+          color: #859396;
+          margin-bottom: .25rem;
+          cursor: pointer;
+          &:hover{
+            color: #015486;
+            font-family: 'title-font';
+          }
+        }
+      }
+    }
+    // 联系方式
+    .concat{
+      padding: .15rem 0;
+      .mediaList{
+        i{
+          font-size: .35rem;
+          color: #3c4043;
+        }
+      }
+      +.concat{
+        border-top: 1px solid #3c4043;
+      }
+      .iconOut{
+        width: .7rem;
+        height: .7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #3d4144;
+        margin-right: .1rem;
+        i{
+          font-size: .45rem;
+          color: #3d4144;
+        }
+      }
+      .linkInfo{
+        font-size: .14rem;
+        color: #3d4144;
+        font-weight: bold;
+        p{
+          margin-bottom: .07rem;
+        }
+      }
+    }
+  }
+}

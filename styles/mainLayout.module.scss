@@ -1,0 +1,53 @@
+// @import './globals.scss';
+.pageContainer{
+  width: 100%;
+  min-height: 100vh;
+  background: #e3e3e3;
+  padding-top: .91rem;
+  .headBar{
+    padding: 13px;
+    height: .91rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    .barContainer{
+      padding: 0px 5px;
+      width: 66%;
+      .menuList{
+        width: calc(100% - 5.2rem);
+        min-width: 4.6rem;
+        .menuItem{
+          font-size: .16rem;
+          color: #8b8b8b;
+          &.activePath{
+            color: #015486;
+            font-size: .18rem;
+          }
+          &:hover{
+            font-family: 'title-font';
+            // color: $--color-menu-font-link;
+            color:dodgerblue;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .mainContainer{
+    min-height: calc(100vh - .91rem);
+  }
+  .footContainer{
+    background: #313131;
+    width: 100%;
+    .footCont{
+      width: 66%;
+      padding: 35px 0 20px 0;
+      p{
+        font-size: .15rem;
+        margin-bottom: .06rem;
+      }
+    }
+  }
+}

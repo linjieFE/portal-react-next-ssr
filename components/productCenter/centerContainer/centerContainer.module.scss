@@ -1,0 +1,132 @@
+.centerContainer{
+  width: 66%;
+  margin: 0 auto;
+  padding: .5rem 0 .9rem 0;
+  .gameList{
+    width: 100%;
+    margin-top: .3rem;
+    .gameItem{
+      width: 30%;
+      margin-bottom: .45rem;
+      border-radius: .10rem;
+      background: #fff;
+      overflow: hidden;
+      &.gameItemCenter{
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+      }
+      &:hover{
+        box-shadow: 0 2px 0px #e3274a;
+        .gamePost{
+          .postImg{
+            transform: scale(1.05);
+          }
+          .gameInfo{
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      .gamePost{
+        height: 1.8rem;
+        transition: all .2s linear;
+        overflow: hidden;
+        border-radius: .1rem;
+        position: relative;
+        .postImg{
+          width: 100%;
+          min-height: 100%;
+          transition: transform .3s ease;
+        }
+        .gameInfo{
+          width: 100%;
+          height: 100%;
+          background: rgba(228,38,74,.7);
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          transition: all .3s ease;
+          padding: .1rem .15rem;
+          box-sizing: border-box;
+          .codeContainer{
+            background: #fff;
+            border-radius: .08rem;
+            padding: .06rem;
+            box-sizing: border-box;
+          }
+          .cusButton{
+            border: 2px solid #fff;
+            font-size: .14rem;
+            color: #fff;
+            padding: .1rem .2rem;
+            border-radius: .25rem;
+            font-weight: 600;
+          }
+        }
+      }
+      .gameName{
+        margin: .15rem auto .15rem auto;
+        font-size: .17rem;
+      }
+      .gameIntro{
+        text-align: center;
+        padding: .03rem .15rem;
+        height: .3rem;
+        box-sizing: content-box;
+        font-size: .14rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #8b8b8b;
+      }
+    }
+  }
+  .modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: +4;
+    .modalContent{
+      background-size: 100% 100%;
+      position: relative;
+      width: 54vw;
+      height: 30vw;
+      .titleBar{
+        padding: 0 .2rem 0 .5rem;
+        box-sizing: border-box;
+        img{
+          width: 5vw;
+        }
+        margin-top: calc(-2.5vw - .3rem);
+      }
+      .subPic{
+        width: 76%;
+        position: absolute;
+        right: -12%;
+        top: -22%;   
+      }
+      .desContaienr{
+        margin: .3rem 0 0 .3rem;
+        .des{
+          font-size: .14rem;
+          font-weight: 600;
+          color: #333;
+          max-width: 36%;
+          height: 13vw;
+        }
+        .codeContainer{
+          background: #fff;
+          border-radius: .08rem;
+          padding: .08rem;
+          box-sizing: border-box;
+        }
+        .wxCode{
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}

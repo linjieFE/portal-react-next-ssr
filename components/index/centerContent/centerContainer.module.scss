@@ -1,0 +1,178 @@
+.centerContainer{
+  width: 66%;
+  margin: 0 auto;
+  padding: .5rem 0 .9rem 0;
+  .titBar{
+    width: 100%;
+    margin-bottom: .25rem;
+    .titIcon{
+      width: .06rem;
+      align-self: stretch;
+      background: #015486;
+      margin-right: .2rem;
+    }
+    .titName{
+      font-size: .22rem;
+      color: #3d3e40;
+      font-weight: 500;
+    }
+  }
+  .contOne{
+    .oneLeft{
+      .gameItem{
+        width: 31%;
+        margin-right: 2%;
+        margin-bottom: .25rem;
+        border-radius: .10rem;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        &:hover{
+          box-shadow: 2px 6px 7px 3px rgba(0,0,0,.1);
+          border-radius: .10rem;
+          .gamePost{
+            transform: scale(1.05);
+            border-radius: .10rem;
+          }
+        }
+        .gamePost{
+          display: block;
+          height: 8.3vw;
+          transition: all .2s linear;
+        }
+        .gameName{
+          margin: .08rem auto .01rem auto;
+          font-size: .15rem;
+          height: .37rem;
+          text-align: center;
+        }
+        .gameIntro{
+          text-align: center;
+          padding: .03rem .15rem;
+          height: .4rem;
+          box-sizing: content-box;
+          font-size: .14rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #8b8b8b;
+        }
+        .split{
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 .1rem;
+          margin-top: .1rem;
+          div{
+            width: 100%;
+            height: 1px;
+            background: #bfbfbf;
+          }
+        }
+        .gameLink{
+          margin: .12rem;
+          a{
+            display: flex;
+            color: #8b8b8b;
+            font-size: .14rem;
+            justify-content: center;
+            align-items: center;
+            padding-left: .15rem;
+            i{
+              font-size: .3rem;
+            }
+          }
+        }
+      }
+    }
+    .oneRight{
+      .packageItem{
+        padding: .1rem .2rem;
+        box-sizing: border-box;
+        border: 1px solid #eaeaea;
+        border-radius: .1rem;
+        margin-bottom: .15rem;
+        background: #fff;
+        &:hover{
+          background: #f1f2f7;
+          .pArrow{
+            color: #ca0114;
+          }
+        }
+        .pArrow{
+          font-size: .3rem;
+          color: #aeaeae;
+        }
+        .pLogo{
+          width: .6rem;
+          height: .6rem;
+          box-shadow: .01rem .01rem .02rem .03rem rgba(0,0,0,.1);
+          margin-right: .18rem;
+        }
+        .pName{
+          font-size: .15rem;
+          max-width: 1.2rem;
+          overflow: hidden;
+          color: #5d565e;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .pIntro{
+          max-width: 1.4rem;
+          overflow: hidden;
+          font-size: .14rem;
+          color: #8a8a8a;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .pDate{
+          font-size: .14rem;
+          color: #8a8a8a;
+          i{
+            font-size: .16rem;
+            color: #89c184;
+          }
+        }
+      }
+    }
+  }
+  .contTwo{
+    margin-top: .4rem;
+    .twoLeft{
+      margin-right: 3%;
+    }
+    .twoRight{
+      .btNewsItem{
+        background-color: #fff;
+        border-radius: .1rem;
+        width: 100%;
+        transition: all .3s ease;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: right bottom;
+        padding: .2rem .3rem;
+        height: 28%;
+        cursor: pointer;
+        &:hover{
+          background-color:rgba(24,144,255,.2);
+          p{
+            color: #fff;
+          }
+        }
+        .title{
+          font-size: .17rem;
+          color: #3c4043;
+          font-weight: bold;
+          max-height: .55rem;
+          max-width: 70%;
+          overflow: hidden;
+        }
+        .detail{
+          font-size: .13rem;
+          color: #849197;
+          margin-top: .07rem;
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}

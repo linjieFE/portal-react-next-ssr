@@ -1,0 +1,110 @@
+.listOut{
+  width: 100%;
+  .listContainer{
+    margin-bottom: .8rem;
+    .titBar{
+      margin-bottom: .6rem;
+    }
+    .listItem{
+      &.listCur{
+        .itemDetail{
+          display: block;
+        }
+        .itemTit{
+          .iconContainer{
+            .iconRow{
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+      .itemDetail{
+        display: none;
+        overflow: hidden;
+        transition: all .3s linear;
+        padding: .4rem 0;
+        border-bottom: 1px solid #bfbfbf;
+      }
+      .itemTit{
+        padding: .2rem 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #bfbfbf;
+        .iconContainer{
+          position: relative;
+          .iconRow,.iconCol{
+            width: 2px;
+            height: 15px;
+            background-color: #777;
+            transition: all .3s linear;
+          }
+          .iconRow{
+            transform: rotate(0deg);
+          }
+          .iconCol{
+            position: relative;
+            left: -2px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}
+// treat
+.treatItem{
+  position: relative;
+  width: 30%;
+  height: 2.4rem;
+  overflow: hidden;
+  margin-bottom: .35rem;
+  background-size: 100% 100%;
+  transition: all .4s linear;
+  cursor: pointer;
+  &:hover{
+    background: #40a9ff;
+    .hoverContainer{
+      height: 100%;
+    }
+  }
+  .iconBar{
+    font-size: .45rem;
+    margin-top: .25rem;
+    line-height: 1;
+  }
+  .titleBar{
+    font-size: .24rem;
+    font-family: 'title-font';
+    color: #3c3f41;
+    margin-top: .15rem;
+  }
+  .subBar{
+    color: #afafaf;
+    font-size: .12rem;
+    margin-top: .05rem;
+    margin-bottom: .1rem;
+    text-align: center;
+  }
+  .contentBar{
+    color: #929292;
+    text-align: center;
+    max-width: 80%;
+    font-size: .14rem;
+  }
+  .hoverContainer{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: height .5s linear;
+    .hoverBar{
+      width: 100%;
+      height: 2.4rem;
+      background-size: 100% 100%;
+      .iconBar,.subBar,.contentBar,.titleBar{
+        color: #ffffff;
+      }
+    }
+  }
+}

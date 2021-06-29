@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import 'antd/dist/antd.css'
+import '../styles/globals.scss'
 import I18n from "../lib/i18n";
 
 export default function MyApp({ Component, pageProps }) {
